@@ -6,7 +6,6 @@ import java.util.Enumeration;
 public class ButtonEventManager implements ActionListener {
 
     String chosenDayOfTheWeek;
-
     ButtonGroup dayOfTheWeekGroup;
     JTextField numberOfTasksField;
 

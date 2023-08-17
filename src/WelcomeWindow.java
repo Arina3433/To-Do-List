@@ -8,7 +8,7 @@ public class WelcomeWindow extends JFrame {
     JButton setContinueButton;
 
     public WelcomeWindow() {
-        super("Список задач");
+        super("Hello");
         setSize(1000, 400);
         setLocation(5, 5);
         setDefaultCloseOperation(EXIT_ON_CLOSE);

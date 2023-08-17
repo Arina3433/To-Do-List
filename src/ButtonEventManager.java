@@ -5,7 +5,6 @@ import java.util.Enumeration;
 
 public class ButtonEventManager implements ActionListener {
 
-    String chosenDayOfTheWeek;
     ButtonGroup dayOfTheWeekGroup;
     JTextField numberOfTasksField;
 
@@ -25,7 +24,7 @@ public class ButtonEventManager implements ActionListener {
             /*На основе класса AbstractButton, который включает в себя какие-то типы кнопок, и в частности например
             RadioButton, создаем объект, в который передаем первый (и далее) элемент массива */
             if (abstractButton.isSelected()) {
-                chosenDayOfTheWeek = abstractButton.getText();
+                String chosenDayOfTheWeek = abstractButton.getText();
                 new WindowWithTaskList(chosenDayOfTheWeek, Integer.parseInt(numberOfTasksField.getText())).setVisible(true);
                 break;
             }
